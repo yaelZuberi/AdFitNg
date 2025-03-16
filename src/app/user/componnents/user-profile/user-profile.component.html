@@ -1,0 +1,48 @@
+<div class="home-container">
+    <section class="hero-section">
+      <h1>HELLO TO </h1>
+      <p class="subtitle">Welcome to your personal area</p>
+    </section>
+  
+    <section class="features-section">
+      <a routerLink='/allUsers' class="feature-card">
+        <div class="feature-icon">📊</div>
+        <h3>Dashboard</h3>
+        <p>View your personal statistics and activities</p>
+      </a>
+      <a routerLink="/settings" class="feature-card">
+        <div class="feature-icon">⚙️</div>
+        <h3>Settings</h3>
+        <p>Customize your account preferences</p>
+      </a>
+      <a routerLink="/profile" class="feature-card">
+        <div class="feature-icon">📝</div>
+        <h3>Profile</h3>
+        <p>Update your personal information</p>
+      </a>
+    </section>
+  
+    <section class="cta-section">
+
+      <h2>Get Started</h2>
+      <p>Explore all the features available in your personal area</p>
+      <button class="cta-button" (click)="openPopup()">Explore Now</button>
+    </section>
+  
+    <section class="benefits-section">
+      <div class="benefit-item">
+        <h4>Personalization</h4>
+        <p>Customize your experience according to your preferences</p>
+      </div>
+      <div class="benefit-item">
+        <h4>Security</h4>
+        <p>Your data is protected with advanced security measures</p>
+      </div>
+      <div class="benefit-item">
+        <h4>Support</h4>
+        <p>24/6 support available whenever you need assistance</p>
+      </div>
+    </section>
+  </div>
+  
+  <router-outlet></router-outlet>
