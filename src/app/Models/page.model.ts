@@ -1,10 +1,11 @@
 //post model??
 
-import { Advertisement } from "./advertisment.model";
+import { Advertisement, AdvertisementDTO } from "./advertisment.model";
 
 export class Page{
     id!:number;
     pageNumber!:number;
-    advertisements: Advertisement[] = [];
+    advertisements: AdvertisementDTO[] = [];
     capacity!:number; 
 }
+

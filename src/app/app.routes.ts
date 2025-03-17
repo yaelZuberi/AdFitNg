@@ -6,6 +6,7 @@ import { AddAdvertisementComponent } from './advertisement/components/add-advert
 import { UserProfileComponent } from './user/componnents/user-profile/user-profile.component';
 import { GetUserComponent } from './user/componnents/get-user/get-user.component';
 import { LogoutComponent } from './auth/logout/logout.component';
+import { NewspaperComponent } from './newspaper/newspaper.component';
 
 export const routes: Routes = [
     {path:'', component:LoginComponent},
@@ -15,5 +16,6 @@ export const routes: Routes = [
     {path:'addAdvertisement',component:AddAdvertisementComponent},
     {path:'user',component:UserProfileComponent},
     {path:'allUsers',component:GetUserComponent},
-    {path:'logout',component:LogoutComponent}
+    {path:'logout',component:LogoutComponent},
+    {path:'newspaper',component:NewspaperComponent}
 ];

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Advertisement,Esize } from '../../../Models/advertisment.model';
+import { Advertisement,ESize } from '../../../Models/advertisment.model';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { AdvertisementModule } from '../../advertisement.module'; 
@@ -22,10 +22,10 @@ export class AddAdvertisementComponent implements OnInit {
    user:any;
 
   sizes = [
-    { value: Esize.EIGHTH, label: '1/8 Page' },
-    { value: Esize.QUARTER, label: '1/4 Page' },
-    { value: Esize.HALF, label: '1/2 Page' },
-    { value: Esize.FULL, label: 'Full Page' }
+    { value: ESize.EIGHTH, label: '1/8 Page' },
+    { value: ESize.QUARTER, label: '1/4 Page' },
+    { value: ESize.HALF, label: '1/2 Page' },
+    { value: ESize.FULL, label: 'Full Page' }
   ];
 
   constructor(private router: Router,private _adService:AdService,private modalService: NgbModal) {}

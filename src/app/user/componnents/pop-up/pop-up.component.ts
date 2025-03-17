@@ -2,6 +2,7 @@ import { Component, Injectable, NgModuleRef, OnInit } from '@angular/core';
 import { NgbModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 import { UserProfileComponent } from '../user-profile/user-profile.component';
 import { AdService } from '../../../service/advertisement';
+import { PageService } from '../../../service/page.service';
 
 @Component({
   selector: 'app-pop-up',
@@ -17,7 +18,7 @@ export class PopUpComponent implements OnInit{
  
 
 
-  constructor(private modalService: NgbModal,private _adService:AdService) {}
+  constructor(private modalService: NgbModal,private _adService:AdService,private _pageService:PageService) {}
 
   flag!:boolean;
 
@@ -49,11 +50,11 @@ export class PopUpComponent implements OnInit{
 
 
   arrange(){
-
-
+  
+    
   }
 
-  
+
   closePopup() {
     console.log('reffffffffffff');
     

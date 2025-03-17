@@ -5,11 +5,12 @@ import { GetUserComponent } from './user/componnents/get-user/get-user.component
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { CommonModule } from '@angular/common';
+import { NewspaperComponent } from './newspaper/newspaper.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule,RouterOutlet,NavbarComponent,FooterComponent],
+  imports: [CommonModule,RouterOutlet,NavbarComponent,FooterComponent,NewspaperComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
